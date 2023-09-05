@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Newsletter sign-up form with success message</title>
+
+  <script src="scripts/script.js" defer></script>
+</head>
+<body>
+  <main>
+    <article class="main-conteiner first-conteiner">
+      <div class="img-content">
+        <img src="assets/images/illustration-sign-up-mobile.svg" alt="illustration-mob" class="img-mob">
+        <img src="assets/images/illustration-sign-up-desktop.svg" alt="illustration-dek"  class="img-dek">
+      </div>
+      <section class="content-box">
+        <h1 class="title">
+          Stay update!
+        </h1>
+  
+        <p class="intro">
+          Join 60,000+ product managers receiving monthly updates on:
+        </p>
+  
+        <ul class="list-box">
+          <li class="parameter">
+            <i class=""></i>
+            Product discovery and building what matters
+          </li>
+          <li class="parameter">
+            <i class=""></i>
+            Measuring to ensure updates are a success
+          </li>
+          <li class="parameter">
+            <i class=""></i>
+            And much more!
+          </li>
+        </ul>
+  
+        <div class="form">
+          <label for="email" class="email-label">
+            Email address
+          </label>
+          <input placeholder="email@company.com" type="email" class="email" id="email" name="email" required>
+          <button class="submit-btn" id="submit" >
+            Subscribe to monthly newsletter
+          </button>
+        </div>
+      </section>
+    </article>
+  
+    <article class="main-conteiner success-conteiner">
+      <div class="box-success">
+        <h1 class="title">
+          Thanks for subscribing
+        </h1>
+        <p class="text-content">
+          A confirmation email has been sent to <span id="email-adress"><strong></strong></span>. Please opent it and click on the button inside to confirm the subscribtion. 
+        </p>
+        <button class="dismiss-btn">
+          Dismiss
+        </button>
+      </div>
+    </article>
+  </main>
+  <!-- Sign-up form start -->
+
+  <!--Stay updated!-->
+
+  <!--Join 60,000+ product managers receiving monthly updates on:
+
+  Product discovery and building what matters
+  Measuring to ensure updates are a success
+  And much more!
+
+  Email address
+  email@company.com
+
+  Subscribe to monthly newsletter-->
+
+  <!-- Sign-up form end -->
+
+  <!-- Success message start -->
+
+  <!--Thanks for subscribing!-->
+
+  <!--A confirmation email has been sent to ash@loremcompany.com. 
+  Please open it and click the button inside to confirm your subscription.
+
+  Dismiss message-->
+
+  <!-- Success message end -->
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://github.com/AlphaCharlieFoxtrot?tab=repositories" target="_blank">AlphaCharlieFoxtrot</a>.
+  </div>
+</body>
+</html>
