@@ -7,13 +7,12 @@
 }
 
 body{
-    min-width: 375px;
     width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    background-color: hsl(235, 18%, 26%);
+    background-color: #fff;
 }
 
 main{
@@ -41,7 +40,7 @@ main{
     max-height: 0;
 }
 .first-conteiner .content-box{
-    padding: 6%;
+    padding: 2%;
     display: flex;
     flex-direction: column;
     align-items: baseline;
@@ -70,8 +69,15 @@ main{
     width: 100%;
 }
 .form label{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     font-size: 0.75em;
     font-weight: 700;
+}
+label .opacityZero{
+    color: orange;
+    opacity: 0;
 }
 .form input{
     padding-left: 15px;
@@ -98,12 +104,12 @@ main{
     width: 100%;
     height: 100%;
     position: absolute;
-    z-index: 8;
+    z-index: 9;
     /*display: flex;*/
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: hsl(235, 18%, 26%);
+    background-color: #fff;
 }
 .box-success{
     display: flex;
@@ -111,8 +117,8 @@ main{
     justify-content: space-around;
     align-items: baseline;
     background-color: #fff;
-    width: 40%;
-    height: 50%;
+    width: 100%;
+    height: 100%;
     padding: 5%;
 }
 .active{
@@ -130,6 +136,7 @@ main{
         height: 100vh;
         width: 100%;
         max-width: 1440px;
+        background-color: hsl(235, 18%, 26%);
     }
     main{
         min-width: 810px;
@@ -159,7 +166,7 @@ main{
         align-items: center;
         justify-content: center;
         object-fit: cover;
-        width: 90%;
+        width: 80%;
     }
     .img-dek{
         opacity: 1;
@@ -174,6 +181,31 @@ main{
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 95%;
+        height: 75%;
+    }
+    .success-conteiner{
+        display: none;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        z-index: 8;
+        /*display: flex;*/
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: hsl(235, 18%, 26%);
+    }
+    .box-success{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: baseline;
+        background-color: #fff;
+        width: 40%;
+        height: 50%;
+        padding: 5%;
+    }
+    .active{
+        display: flex;
     }
 }

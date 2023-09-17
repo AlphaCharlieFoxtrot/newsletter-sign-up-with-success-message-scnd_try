@@ -12,6 +12,7 @@
   <title>Frontend Mentor | Newsletter sign-up form with success message</title>
 
   <script src="scripts/script.js" defer></script>
+  <script src="scripts/main.js" defer></script>
 </head>
 <body>
   <main>
@@ -46,7 +47,7 @@
   
         <div class="form">
           <label for="email" class="email-label">
-            Email address
+            <p>Email address</p><p class="opacityZero">Valid Email Required</p>
           </label>
           <input placeholder="email@company.com" type="email" class="email" id="email" name="email" required>
           <button class="submit-btn" id="submit" >
@@ -62,9 +63,9 @@
           Thanks for subscribing
         </h1>
         <p class="text-content">
-          A confirmation email has been sent to <span id="email-adress"><strong></strong></span>. Please opent it and click on the button inside to confirm the subscribtion. 
+          A confirmation email has been sent to <span id="email-adress"></span>. Please opent it and click on the button inside to confirm the subscribtion. 
         </p>
-        <button class="dismiss-btn">
+        <button id="dismiss" class="dismiss-btn">
           Dismiss
         </button>
       </div>
