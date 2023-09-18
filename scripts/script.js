@@ -28,6 +28,7 @@ function success() {
     const baliseEmail = document.getElementById("email")
     const email = baliseEmail.value
 
+
     let process = verifierEmail(email)
 
     if (email === "") {
@@ -36,6 +37,8 @@ function success() {
         return
     }else if (process === true){
         validateState(email)
+        const mainConteiner = document.querySelector(".main-conteiner")
+        mainConteiner.classList.add("opacity")
     } else {
         //console.log("L'adresse e-mail n'est pas valide.")
         errorState()
@@ -46,6 +49,9 @@ function success() {
 function dismissPopUp(){
     let successBox = document.querySelector(".success-conteiner")
     successBox.classList.remove("active")
+
+    const mainConteiner = document.querySelector(".main-conteiner")
+    mainConteiner.classList.remove("opacity")
 }
 
 function newsletterSignUp(){

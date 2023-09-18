@@ -8,6 +8,7 @@
 
 body{
     width: 100%;
+    min-width: 340px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -56,11 +57,19 @@ main{
 }
 .content-box ul{
     font-size: 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 .content-box ul li{
     display: flex;
     flex-direction: row;
     gap: 2%;
+}
+.content-box ul li i{
+    color: hsl(4, 100%, 67%);
+    font-size: 1.1em;
+    font-weight: bold;
 }
 .content-box .form{
     display: flex;
@@ -74,6 +83,7 @@ main{
     justify-content: space-between;
     font-size: 0.75em;
     font-weight: 700;
+    max-width: 375px;
 }
 label .opacityZero{
     color: orange;
@@ -101,33 +111,76 @@ label .opacityZero{
 
 .success-conteiner{
     display: none;
-    width: 100%;
+    width: 90%;
     height: 100%;
     position: absolute;
     z-index: 9;
     /*display: flex;*/
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: #fff;
 }
 .box-success{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
-    align-items: baseline;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
+    padding: 5%;
     width: 100%;
     height: 100%;
-    padding: 5%;
+    gap: 4%;
+}
+.box-text{
+    width: 100%;
+    max-width: 375px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-bottom: 25%;
+}
+.box-success i{
+    width: 100%;
+    max-width: 375px;
+    text-align: left;
+    color: hsl(4, 100%, 67%);
+    font-size: 4em;
+    font-weight: bold;
+}
+.box-success .box-text .title{
+    text-align: left;
+    width: 90%;
+    max-width: 375px;
+    font-size: 2.2em;
+}
+.box-success .box-text .text-content{
+    width: 80%;
+    max-width: 375px;
+}
+.box-success .text-content span{
+    font-weight: bold;
+    font-size: 1.1em;
+}
+.box-success .dismiss-btn{
+    height: 40px;
+    width: 100%;
+    max-width: 375px;
+    border-radius: 5px;
+    color: #fff;
+    background-color: hsl(235, 18%, 26%);
+    font-weight: bold;
+    border: none;
 }
 .active{
     display: flex;
 }
+.opacity{
+    opacity: 0;
+}
 .attribution{
     text-align: center;
 }
-@media (min-width: 1024px){
+@media (min-width: 900px){
     body{
         display: flex;
         flex-direction: column;
@@ -199,11 +252,33 @@ label .opacityZero{
         display: flex;
         flex-direction: column;
         justify-content: space-around;
-        align-items: baseline;
+        align-items: center;
         background-color: #fff;
         width: 40%;
-        height: 50%;
-        padding: 5%;
+        max-width: 410px;
+        height: 65%;
+        max-height: 405px;
+        padding: 2.5%;
+        border-radius: 25px;
+    }
+    .box-success i{
+        width: 100%;
+        max-width: 375px;
+        text-align: left;
+        color: hsl(4, 100%, 67%);
+        font-size: 2.5em;
+        font-weight: bold;
+    }
+    .box-text{
+        width: 100%;
+        max-width: 375px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        margin-bottom: 0;
+    }
+    .box-success .box-text .text-content{
+        width: 100%;
     }
     .active{
         display: flex;
