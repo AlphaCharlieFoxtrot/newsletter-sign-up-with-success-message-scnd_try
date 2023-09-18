@@ -52,6 +52,8 @@ function dismissPopUp(){
 
     const mainConteiner = document.querySelector(".main-conteiner")
     mainConteiner.classList.remove("opacity")
+
+    document.getElementById("email").value = ''
 }
 
 function newsletterSignUp(){
